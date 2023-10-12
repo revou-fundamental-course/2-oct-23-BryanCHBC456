@@ -4,8 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalkulator Suhu</title>
+  <!-- css links -->
+  <link rel="stylesheet" href="CSS/style.css"> 
+  <!--box icons-->
+  <link 
+  rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+  />
+  <!-- fontawsome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
 </head>
 <body>
-  <h1>Kalkulator Suhu</h1>
+  <div class="container">
+    <div class="temperature-converter">
+      <!-- mobile icon -->
+      <div class="mobile">
+        <p>12.00 AM</p>
+        <div>
+          <i class='bx bx-signal-5' ></i>
+          <i class='bx bx-wifi'></i>
+          <i class='bx bxs-battery-charging'></i>
+        </div>
+      </div>
+      
+      <h2 class="title">Kalkulator Suhu</h2>
+
+      <!-- showing result here -->
+      <div class="result">
+        <span class="result-heading">Hasil (Celcius) </span>
+        <h2 class="celcius-value" id="Celcius">0</h2>
+      </div>
+
+      <!-- input field -->
+      <div class="degree-type">
+        <!-- for degrees -->
+        <div class="degree-field">
+          <label for="degree">Nilainya</label>
+          <input type="number" name="degree" id="degree">
+        </div>
+
+        <!-- for option selection -->
+        <div class="temp-field">
+          <label for="temp-type">Tipe</label>
+          <select name="temperatures" id="temp-type" autocomplete="on">
+            <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+            <option value="kelvin" id="kelvin">Kelvin</option>
+
+          </select>
+        </div>
+      </div>
+      <button id="convert-btn">Convert</button>
+    </div>
+  </div>
+
+
+  <!-- script tags -->
+  <script src="js/script.js"></script>
 </body>
 </html>

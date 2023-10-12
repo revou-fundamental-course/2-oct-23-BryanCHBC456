@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFDF2;
+    background: linear-gradient(90deg, #7743DB 5%, #AED2FF 95%);
+    color: #001C30;
+    font-size: 1rem;
+
+}
+
+.temperature-converter{
+    background: #DAFFFB;
+    width: 100%;
+    min-width: 320px;
+    padding: 20px 25px 45px;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.05) inset;
+    backdrop-filter: blur(25px);
+}
+
+.mobile{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.title{
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    margin: 25px;
+}
+
+.result-heading{
+    color: dodgerblue;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.celcius-value{
+    border-bottom: 2px solid #1684A7;
+    padding: 10px;
+    transition: all .45s ease;
+}
+
+.degree-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.degree-field{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+label{
+    color: #11999E;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+
+input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #8675A9;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input:focus{
+    border: 1px solid #B5EAEA;
+}
+
+option{
+    background: #3D84A8;
+    color: #c1e8f1;
+}
+
+#convert-btn{
+    border: #4F709C;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #322653, #8062D6);
+    color: #EDE4FF;
+    padding: 12px 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#convert-btn:hover{
+    background: linear-gradient(to bottom, #B799FF, #5C469C);
+}
+
+.fa{
+    margin-left: -12px;
+    margin-right: 8px;
+}
